@@ -2,7 +2,7 @@
   "version": 2,
   "functions": {
     "main.py": {
-      "runtime": "python3.11",
+      "runtime": "vercel-python@3.11",
       "maxDuration": 60,
       "memory": 1024
     }
