@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "env": {
+    "GITHUB_TOKEN": "@github_token",
+    "OPENAI_API_KEY": "@openai_api_key",
+    "OPENAI_API_BASE": "@openai_api_base",
+    "AI_MODEL_NAME": "gpt-4o",
+    "OUTPUT_LANGUAGE": "english"
+  },
+  "functions": {
+    "main.py": {
+      "runtime": "python3.11",
+      "maxDuration": 60,
+      "memory": 1024
+    }
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "main.py" }
+  ],
+  "installCommand": "pip install -r requirements.txt"
+}
